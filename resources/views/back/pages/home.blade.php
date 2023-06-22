@@ -2,14 +2,17 @@
 @section('pageTitle', isset($pageTitle) ? $pageTitle : 'Home')
 @section('content')
 
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti dolor ipsum aut natus sunt doloremque? Consectetur
-    deleniti voluptatibus vel modi sequi saepe voluptatem iusto, ipsum ullam sint, aliquam quibusdam eaque!
-    
+    <div class="m-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti dolor ipsum aut natus sunt doloremque?
+        Consectetur
+        deleniti voluptatibus vel modi sequi saepe voluptatem iusto, ipsum ullam sint, aliquam quibusdam eaque!
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
@@ -18,7 +21,8 @@
             </div>
             <div class="col-md-6 my-2">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
@@ -27,7 +31,8 @@
             </div>
             <div class="col-md-6 my-2">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
@@ -36,7 +41,8 @@
             </div>
             <div class="col-md-6 my-2">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
@@ -45,7 +51,8 @@
             </div>
             <div class="col-md-6 my-2">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
@@ -54,16 +61,17 @@
             </div>
             <div class="col-md-6 my-2">
                 <div class="card">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg" class="card-img-top" alt="Card Image">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/32/2023/01/Guide-to-cyanotype-printing-b5a727f.jpg"
+                        class="card-img-top" alt="Card Image">
                     <div class="card-body">
                         <h5 class="card-title">Card Title</h5>
                         <p class="card-text">Card content goes here.</p>
                     </div>
                 </div>
             </div>
-            
 
-         
+
+
 
         </div>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti dolor ipsum aut natus sunt doloremque?
