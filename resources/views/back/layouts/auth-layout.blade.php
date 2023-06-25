@@ -24,7 +24,7 @@
     <link href="{{ asset('back/dist/css/demo.min.css') }}" rel="stylesheet" />
 
     @stack('stylesheets')
-
+    @livewireStyles
 
 </head>
 
@@ -36,6 +36,7 @@
     <script src="{{ asset('back/dist/js/demo.min.js') }}" defer></script>
 
     @stack('scripts')
+    @livewireScripts
    
 </body>
 

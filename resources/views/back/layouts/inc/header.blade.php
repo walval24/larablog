@@ -6,7 +6,7 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
             <a href=".">
-                <img src="https://static.wixstatic.com/media/4ab240_e80099a71ed2439cb7275199b615f140~mv2.png/v1/fill/w_128,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Untitled-1_edited.png" width="110" height="32" alt="Tabler"
+                <img src="https://static.wixstatic.com/media/4ab240_e80099a71ed2439cb7275199b615f140~mv2.png/v1/fill/w_128,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Untitled-1_edited.png" width="110" height="110" alt="Tabler"
                     class="navbar-brand-image">
             </a>
         </h1>
