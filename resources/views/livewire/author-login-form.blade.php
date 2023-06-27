@@ -1,7 +1,7 @@
 <div>
 
     @if (Session::get('fail'))
-        <div class="alert alert danger">
+        <div class="alert alert-danger">
             {{ Session::get('fail') }}
         </div>
     @endif
@@ -26,8 +26,7 @@
                     </span>
                 </label>
                 <div class="input-group input-group-flat">
-                    <input type="password" class="form-control" placeholder="Your password" autocomplete="off"
-                        wire:model="password">
+                    <input type="password" class="form-control" placeholder="Your password" autocomplete="off"  wire:model="password">
                     <span class="input-group-text">
                         <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Show password"
                             data-bs-original-title="Show password">
