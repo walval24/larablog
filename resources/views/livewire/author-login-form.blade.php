@@ -10,10 +10,10 @@
         <div class="card-body">
             <h2 class="h2 text-center mb-4">Login to your account</h2>
             <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control" placeholder="your@email.com" wire:model="email">
+                <label class="form-label">Email or Username</label>
+                <input type="text" class="form-control" placeholder="digit your email or username" wire:model="login_id">
 
-                @error('email')
+                @error('login_id')
                     <span class="text-danger"> {{ $message }} </span>
                 @enderror
 
