@@ -22,17 +22,23 @@ class AuthorLoginForm extends Component
             'password.required' => 'Password is required'
         ]);
 
-        $creds = array('email'=>$this->email, 'password'=>$this->password);
+        $creds = array('email' => $this->email, 'password' => $this->password);
 
-        if( Auth::guard('web')->attempt($creds)){
-            $checkUser = User::where('email', $this->email)->first();
-            if($checkUser->blocked == 1){
-                    Auth::guard('web')->logout();
-                    return redirect()->route('author.login')->with('fail','Your account has been blocked.');
+        if (Auth::guard('web')->attempt($creds)) {
+
+            $checkuser = User::where('email', $this->email)->first();
+            if($checkuser->blocked == 1){
+                Auth::guard('web')->logout();
+                return redirect()-> route('authore.login')->with('fail','Youre account has been blocked');
+
             }else{
-                return redirect()-> route('author.home');
+                return redirect()->route('author.home');
             }
+           
+        }else{
+            session()->flash('fail','Incorrect email or password');
         }
+
 
 
     }
