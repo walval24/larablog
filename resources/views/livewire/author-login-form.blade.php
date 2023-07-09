@@ -6,12 +6,19 @@
         </div>
     @endif
 
+    @if (Session::get('success'))
+        <div class="alert alert-success">
+            {!! Session::get('success') !!}
+        </div>
+    @endif
+    
     <form class="card card-md" wire:submit.prevent="LoginHandler()" method="post" autocomplete="off">
         <div class="card-body">
             <h2 class="h2 text-center mb-4">Login to your account</h2>
             <div class="mb-3">
                 <label class="form-label">Email or Username</label>
-                <input type="text" class="form-control" placeholder="digit your email or username" wire:model="login_id">
+                <input type="text" class="form-control" placeholder="digit your email or username"
+                    wire:model="login_id">
 
                 @error('login_id')
                     <span class="text-danger"> {{ $message }} </span>
@@ -26,7 +33,8 @@
                     </span>
                 </label>
                 <div class="input-group input-group-flat">
-                    <input type="password" class="form-control" placeholder="Your password" autocomplete="off"  wire:model="password">
+                    <input type="password" class="form-control" placeholder="Your password" autocomplete="off"
+                        wire:model="password">
                     <span class="input-group-text">
                         <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Show password"
                             data-bs-original-title="Show password">

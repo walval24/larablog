@@ -18,7 +18,7 @@
             <h2 class="h2 text-center mb-4">Reset Password</h2>
             <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input type="text" class="form-control" placeholder="Enter your email address" wire:model='email'>
+                <input type="text" class="form-control" placeholder="Enter your email address" wire:model='email' disabled>
                 <span class="text-danger"> @error('email')
                         {{ $message }}
                     @enderror
