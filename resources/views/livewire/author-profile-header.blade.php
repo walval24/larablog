@@ -10,7 +10,7 @@
                 <div class="page-subtitle">
                     <div class="row">
                         <div class="col-auto">
-                            <a href="#" class="text-reset">{{$author->username}}</a>
+                            <a href="#" class="text-reset">{{$author->username}} | {{ $author->authorType->name}}</a>
                         </div>
                     </div>
                 </div>

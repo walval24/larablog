@@ -48,4 +48,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function authorType(){
+        return $this->belongsTo(Type::class,'type','id');
+    }
 }
