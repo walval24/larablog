@@ -17,3 +17,4 @@ class TopHeader extends Component
         return view('livewire.top-header');
     }
 }
+
