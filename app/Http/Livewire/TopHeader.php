@@ -9,6 +9,10 @@ class TopHeader extends Component
 {
     public $author;
 
+    protected $listeners = [
+        'updateTopHeader'=> '$refresh'
+    ];
+
     public function mount(){
         $this->author = User::find(auth('web')->id()); 
     }
@@ -18,3 +22,4 @@ class TopHeader extends Component
     }
 }
 
+// Video YouTube Build a Blog with Laravel #13 Show Toastr Message
