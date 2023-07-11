@@ -72,11 +72,11 @@
                 if(event.detail.type === 'info'){
                     toastr.info(event.detail.message);
                 }else if (event.detail.type === 'success'){
-                    toastr.info(event.detail.message);
+                    toastr.success(event.detail.message);
                 }else if (event.detail.type === 'error'){
-                    toastr.info(event.detail.message);
+                    toastr.error(event.detail.message);
                 }else if (event.detail.type === 'warning'){
-                    toastr.info(event.detail.message);
+                    toastr.warning(event.detail.message);
                 }else {
                     return false;
                 };
