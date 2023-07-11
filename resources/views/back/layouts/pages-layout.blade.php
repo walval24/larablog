@@ -20,6 +20,7 @@
     <link href="{{ asset('back/dist/css/tabler-flags.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('back/dist/css/tabler-payments.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('back/dist/css/tabler-vendors.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('back/dist/libs/ijabo/ijabo.min.css') }}" rel="stylesheet" />
     @stack('stylesheets')
     @livewireStyles
     <link href="{{ asset('back/dist/css/demo.min.css') }}" rel="stylesheet" />
@@ -39,7 +40,7 @@
 <body>
     <script src="{{ asset('./back/dist/js/demo-theme.min.js') }}"></script>
     <div class="page">
-       @include('back.layouts.inc.header')
+        @include('back.layouts.inc.header')
 
         <div class="page-wrapper">
             <!-- Page header -->
@@ -55,6 +56,8 @@
     </div>
 
     <!-- Libs JS -->
+    <script src="{{ asset('./back/dist/libs/jquery/jquery-3.6.0.min.js') }}" defer></script>
+    <script src="{{ asset('./back/dist/libs/ijabo/ijabo.min.js') }}" defer></script>
     <script src="{{ asset('./back/dist/libs/apexcharts/dist/apexcharts.min.js') }}" defer></script>
     <script src="{{ asset('./back/dist/libs/jsvectormap/dist/js/jsvectormap.min.js') }}" defer></script>
     <script src="{{ asset('./back/dist/libs/jsvectormap/dist/maps/world.js') }}" defer></script>
@@ -63,6 +66,22 @@
     <script src="{{ asset('./back/dist/js/tabler.min.js') }}" defer></script>
     @stack('scripts')
     @livewireScripts
+    <script>
+        window.addEventListener('showToastr', function(event){
+                toastr.remove();
+                if(event.detail.type === 'info'){
+                    toastr.info(event.detail.message);
+                }else if (event.detail.type === 'success'){
+                    toastr.info(event.detail.message);
+                }else if (event.detail.type === 'error'){
+                    toastr.info(event.detail.message);
+                }else if (event.detail.type === 'warning'){
+                    toastr.info(event.detail.message);
+                }else {
+                    return false;
+                };
+        });
+    </script>
     <script src="{{ asset('./back/dist/js/demo.min.js') }}" defer></script>
 
 </body>
