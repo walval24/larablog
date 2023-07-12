@@ -51,3 +51,5 @@ class AuthorPersonalDetails extends Component
         return view('livewire.author-personal-details');
     }
 }
+
+// Build a blog with Laravel #14 Change Password
